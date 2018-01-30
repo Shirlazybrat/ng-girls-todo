@@ -4,7 +4,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
   selector: 'todo-input',
   template: `
     <input class="todo-input" [value]="title" (keyup.enter)="changeTitle($event.target.value)" #inputElement>
-    <button (click)="changeTitle(inputElement.value)">
+    <button class="btn-primary" (click)="changeTitle(inputElement.value)">
       Save
     </button>
   `,

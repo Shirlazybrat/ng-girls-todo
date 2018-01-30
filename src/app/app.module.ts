@@ -8,6 +8,8 @@ import { ItemComponent } from './item/item.component';
 import { ListManagerComponent } from './list-manager/list-manager.component';
 import {TodoListService} from './todo-list.service';
 import {TodoListStorageService} from './todo-list-storage.service';
+import { AuthService } from './auth.service';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -15,12 +17,13 @@ import {TodoListStorageService} from './todo-list-storage.service';
     AppComponent,
     InputComponent,
     ItemComponent,
-    ListManagerComponent
+    ListManagerComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [TodoListService, TodoListStorageService],
+  providers: [TodoListService, TodoListStorageService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

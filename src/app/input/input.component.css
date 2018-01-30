@@ -14,10 +14,10 @@
   flex-grow: 1;
 }
 
-.btn {
+.btn-primary {
   background: teal;
 }
 
-.btn:hover {
+.btn-primary:hover {
   background: darkslategrey;
 }
